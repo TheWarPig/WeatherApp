@@ -1,6 +1,8 @@
 from configparser import ConfigParser
 import argparse
 
+BASE_WEATHER_API_URL = "http://api.openweathermap.org/data/2.5/weather"
+
 def _get_api_key():
     config = ConfigParser
     config.read("secrets.ini")
